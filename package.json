@@ -1,0 +1,44 @@
+{
+  "name": "reactssrfinal",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/styles": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "axios": "latest",
+    "compression": "latest",
+    "cookie-parser": "latest",
+    "cross-env": "latest",
+    "express": "latest",
+    "nodemon": "latest",
+    "npm-run-all": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-google-recaptcha": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "react-loadable": "latest",
+    "redux": "latest",
+    "redux-form": "latest"
+  },
+  "devDependencies": {
+    "webpack": "^4.36.1",
+    "webpack-cli": "latest",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "latest",
+    "@babel/plugin-transform-runtime": "latest",
+    "@babel/runtime": "latest",
+    "babel-loader": "latest"
+  },
+  "scripts": {
+    "start": "npm-run-all -p build serve",
+    "build": "webpack",
+    "serve": "babel-node -- src/server.js",
+    "production-build": "cross-env NODE_ENV=production webpack",
+    "production": "cross-env NODE_ENV=production babel-node -- src/server.js"
+  }
+}
